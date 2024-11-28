@@ -16,7 +16,6 @@ module tt_um_example (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-//////////////////////////////////   
   // 半加算器の入力
   wire a = ui_in[0];  // 入力 A
   wire b = ui_in[1];  // 入力 B
@@ -28,7 +27,6 @@ module tt_um_example (
   // 出力にアサイン
   assign uo_out[0] = sum;    // 和を出力の最下位ビットに
   assign uo_out[1] = carry;  // キャリーを次のビットに
-///////////////////////
 
   // All output pins must be assigned. If not used, assign to 0.
     assign uo_out[7:2]= 0;  // Example: ou_out is the sum of ui_in and uio_in
